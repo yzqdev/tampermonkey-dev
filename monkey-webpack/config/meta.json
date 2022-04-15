@@ -1,0 +1,48 @@
+{
+  "name": "tamper-webpack",
+  "description": "Bilibili Evolved 的预览版, 可以抢先体验新功能.",
+  "updateURL": "https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@preview/dist/bilibili-evolved.preview.user.js",
+  "downloadURL": "https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@preview/dist/bilibili-evolved.preview.user.js",
+  "version": "2.1.7",
+  "author": "Grant Howard, Coulomb-G",
+  "copyright": "[year], Grant Howard (https://github.com/the1812) & Coulomb-G (https://github.com/Coulomb-G)",
+  "licence": "MIT",
+  "match": "https://bbs.mihoyo.com/ys/*",
+  "exclude": [
+    "*://api.bilibili.com/*",
+    "*://api.*.bilibili.com/*",
+    "*://*.bilibili.com/api/*",
+    "*://member.bilibili.com/studio/bs-editor/*",
+    "*://t.bilibili.com/h5/dynamic/specification",
+    "*://bbq.bilibili.com/*",
+    "*://message.bilibili.com/pages/nav/header_sync",
+    "*://s1.hdslb.com/bfs/seed/jinkela/short/cols/iframe.html"
+  ],
+  "run-at": "document-end",
+  "supportURL": "https://github.com/the1812/Bilibili-Evolved/issues",
+  "homepage": "https://github.com/the1812/Bilibili-Evolved",
+  "grant": [
+    "unsafeWindow",
+    "GM_getValue",
+    "GM_setValue",
+    "GM_deleteValue",
+    "GM_info",
+    "GM_xmlhttpRequest"
+  ],
+  "connect": [
+    "raw.githubusercontent.com",
+    "github.com",
+    "cdn.jsdelivr.net",
+    "cn.bing.com",
+    "www.bing.com",
+    "translate.google.cn",
+    "translate.google.com",
+    "localhost",
+    "*"
+  ],
+  "require": [
+    "https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"
+  ],
+  "icon": "https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@preview/images/logo-small.png",
+  "icon64": "https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@preview/images/logo.png"
+}

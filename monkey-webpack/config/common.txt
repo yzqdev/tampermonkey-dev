@@ -1,0 +1,41 @@
+// ==UserScript==
+// @name            tamper-webpack
+// @description     Bilibili Evolved 的预览版, 可以抢先体验新功能.
+// @updateURL       https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@preview/dist/bilibili-evolved.preview.user.js
+// @downloadURL     https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@preview/dist/bilibili-evolved.preview.user.js
+// @version         2.1.7
+// @author          Grant Howard, Coulomb-G
+// @copyright       2022, Grant Howard (https://github.com/the1812) & Coulomb-G (https://github.com/Coulomb-G)
+// @licence         MIT
+// @match           *://**/*
+// @exclude         *://api.bilibili.com/*
+// @exclude         *://api.*.bilibili.com/*
+// @exclude         *://*.bilibili.com/api/*
+// @exclude         *://member.bilibili.com/studio/bs-editor/*
+// @exclude         *://t.bilibili.com/h5/dynamic/specification
+// @exclude         *://bbq.bilibili.com/*
+// @exclude         *://message.bilibili.com/pages/nav/header_sync
+// @exclude         *://s1.hdslb.com/bfs/seed/jinkela/short/cols/iframe.html
+// @run-at          document-start
+// @supportURL      https://github.com/the1812/Bilibili-Evolved/issues
+// @homepage        https://github.com/the1812/Bilibili-Evolved
+// @grant           unsafeWindow
+// @grant           GM_getValue
+// @grant           GM_setValue
+// @grant           GM_deleteValue
+// @grant           GM_info
+// @grant           GM_xmlhttpRequest
+// @connect         raw.githubusercontent.com
+// @connect         github.com
+// @connect         cdn.jsdelivr.net
+// @connect         cn.bing.com
+// @connect         www.bing.com
+// @connect         translate.google.cn
+// @connect         translate.google.com
+// @connect         localhost
+// @connect         *
+// @require         https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js
+// @require     file://E:\myblogs\tamper-webpack\build\tamper-webpack.dev.user.js
+// @icon            https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@preview/images/logo-small.png
+// @icon64          https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@preview/images/logo.png
+// ==/UserScript==

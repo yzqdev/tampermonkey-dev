@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig-base.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist",
+    "target": "es6",
+    "module": "esnext",
+    "incremental": false,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["scripts", "src", "types", "*.js", "*.ts"],
+  "exclude": ["node_modules", "lib", "es", "dist"]
+}
