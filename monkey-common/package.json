@@ -1,0 +1,15 @@
+{
+  "name": "monkey-common",
+  "version": "1.0.0",
+  "description": "tampermonkey common",
+  "main": "index.js",
+  "author": "yzqdev",
+  "license": "MIT",
+  "scripts": {
+    "dev": "http-server "
+  },
+  "dependencies": {
+    "http-server": "^14.1.0",
+    "sass": "^1.51.0"
+  }
+}
