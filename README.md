@@ -1,7 +1,13 @@
 # 开发tampermonkey脚本
 
+## 直接js脚本开发
+
+使用`@require file://<file url>`就行了
+
 ## 使用webpack开发
 
+
+感谢[https://github.com/the1812/Bilibili-Evolved](https://github.com/the1812/Bilibili-Evolved)的启发  
 webpack可以打包css到js
 只需要和平常一样使用webpack,把打包后的文件内容复制到你的脚本中即可使用
 

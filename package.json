@@ -1,0 +1,13 @@
+{
+  "name": "tampermonkey-dev",
+  "version": "1.0.0",
+  "workspaces": ["monkey-common","monkey-vite","monkey-vue","monkey-webpack","demo*"],
+  "main": "index.js",
+  "repository": "https://github.com/yzqdev/tampermonkey-dev.git",
+  "author": "yzqdev <yzqdev@outlook.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "demo": "yarn workspace demohack dev"
+  }
+}
