@@ -1,0 +1,14 @@
+{
+  "name": "github-enhance",
+  "version": "1.0.0",
+  "license": "MIT",
+  "source": "src/index.js",
+  "main": "dist/main.js",
+  "scripts": {
+    "watch": "parcel watch",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "latest"
+  }
+}

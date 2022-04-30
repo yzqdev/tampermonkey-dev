@@ -1,0 +1,28 @@
+// ==UserScript==
+// @name         Github 增强 - 高速下载
+// @name:zh-CN   Github 增强 - 高速下载
+// @name:zh-TW   Github 增強 - 高速下載
+// @name:en      Github Enhancement - High Speed Download
+// @version      1.9.7
+// @author       X.I.U
+// @description  高速下载 Git Clone/SSH、Release、Raw、Code(ZIP) 等文件、项目列表单文件快捷下载 (☁)
+// @description:zh-CN  高速下载 Git Clone/SSH、Release、Raw、Code(ZIP) 等文件、项目列表单文件快捷下载 (☁)
+// @description:zh-TW  高速下載 Git Clone/SSH、Release、Raw、Code(ZIP) 等文件、項目列表單文件快捷下載 (☁)
+// @description:en  High-speed download of Git Clone/SSH, Release, Raw, Code(ZIP) and other files, project list file quick download (☁)
+// @match        *://github.com/*
+// @match        *://hub.fastgit.xyz/*
+// @icon         https://i.loli.net/2021/03/30/ULV9XunaHesqGIR.png
+// @grant        GM_registerMenuCommand
+// @grant        GM_unregisterMenuCommand
+// @grant        GM_openInTab
+// @grant        GM_getValue
+// @grant        GM_setValue
+// @grant        GM_notification
+// @grant        window.onurlchange
+// @license      GPL-3.0 License
+// @run-at       document-end
+// @require      https://cdn.jsdelivr.net/npm/vue
+// @namespace    https://greasyfork.org/scripts/412245
+// @supportURL   https://github.com/XIU2/UserScript
+// @homepageURL  https://github.com/XIU2/UserScript
+// ==/UserScript==

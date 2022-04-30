@@ -1,0 +1,9 @@
+<div class="card">
+  <strong>选择加速源</strong>
+
+  <div id="app" class="select">
+    <label v-for="item in lists">
+      {{item.country}} <input type="checkbox" v-model="selectedCoutry" />
+    </label>
+  </div>
+</div>

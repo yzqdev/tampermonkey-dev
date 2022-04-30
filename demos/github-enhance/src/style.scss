@@ -1,0 +1,27 @@
+.card{
+  //left: 0 !important;
+  right: 1rem !important;
+  top: 1rem !important;
+  //bottom: 0 !important;
+
+  padding:1rem 1rem;
+  position: fixed !important;
+  opacity: 0.95 !important;
+  z-index: 99999 !important;
+  box-shadow: 0 4px 12px 0 rgb(0 0 0 / 5%);
+  border-radius: 8px;
+  background-color: #fff;
+  color: black;
+  border: 1px solid rgba(136,136,136,0.13333);
+
+  .select {
+
+    padding: 25px 10px 10px 10px !important;
+    font-size: 14px !important;
+    text-align: left !important;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}

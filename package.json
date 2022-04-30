@@ -12,10 +12,12 @@
   "private": true,
   "scripts": {
     "demo": "yarn workspace demohack dev",
-    "parcel": "yarn workspace demo-parcel watch"
+    "parcel": "yarn workspace demo-parcel watch",
+    "github": "yarn workspace github-enhance watch"
   },
   "devDependencies": {
     "@parcel/transformer-inline-string": "2.5.0",
+    "@parcel/transformer-sass": "2.5.0",
     "prettier": "^2.6.2"
   }
 }
