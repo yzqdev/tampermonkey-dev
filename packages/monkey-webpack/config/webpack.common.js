@@ -2,10 +2,10 @@ const path = require("path");
 const webpack = require("webpack");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin"); //这里必须这样写
 const loaders = require("./loaders");
-const {getBanner} = require("./webpack.utils");
+const { getBanner } = require("./webpack.utils");
 const meta = require("./meta.json");
 module.exports = {
-  entry:  './src/index.js',
+  entry: "./src/index.js",
   output: {
     filename: "tamper-webpack.dev.user.js",
     path: path.resolve(__dirname, "../build"),
@@ -20,13 +20,9 @@ module.exports = {
       raw: true,
       entryOnly: true,
     }),
-
-
   ],
   resolve: {
-    modules: [
-      path.resolve(__dirname, "../src"),
-    ],
+    modules: [path.resolve(__dirname, "../src")],
     alias: {
       components: path.resolve(__dirname, "/src/components"),
     },
@@ -35,8 +31,9 @@ module.exports = {
   module: {
     rules: [
       loaders.cssLoader,
-        loaders.sassLoader,
+      loaders.sassLoader,
       loaders.fileLoader,
+      loaders.htmlLoader,
     ],
   },
 };

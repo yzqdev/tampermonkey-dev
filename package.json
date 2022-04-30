@@ -1,13 +1,21 @@
 {
   "name": "tampermonkey-dev",
   "version": "1.0.0",
-  "workspaces": ["monkey-common","monkey-vite","monkey-vue","monkey-webpack","demo*"],
+  "workspaces": [
+    "packages/*",
+    "demos/*"
+  ],
   "main": "index.js",
   "repository": "https://github.com/yzqdev/tampermonkey-dev.git",
   "author": "yzqdev <yzqdev@outlook.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "demo": "yarn workspace demohack dev"
+    "demo": "yarn workspace demohack dev",
+    "parcel": "yarn workspace demo-parcel watch"
+  },
+  "devDependencies": {
+    "@parcel/transformer-inline-string": "2.5.0",
+    "prettier": "^2.6.2"
   }
 }

@@ -1,0 +1,10 @@
+.select {
+
+    padding: 25px 10px 10px 10px !important;
+    font-size: 14px !important;
+    text-align: left !important;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}

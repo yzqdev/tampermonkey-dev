@@ -31,7 +31,7 @@ Thumbs.db
 nbproject/private/
 build/
 nbbuild/
-# dist/
+dist/
 nbdist/
 .nb-gradle/
 yarn.lock
@@ -39,4 +39,3 @@ yarn.lock
 .temp
 dat/
 
-.parcel-cache

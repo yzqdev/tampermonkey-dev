@@ -6,6 +6,7 @@ const cssLoader = {
     // {
     //   loader: MiniCssExtractPlugin.loader
     // },
+
     {
       loader: "css-loader",
     },
@@ -21,24 +22,27 @@ const cssLoader = {
 };
 const csLoader = {
   test: /\.css$/,
-  use:  ["css-loader", MiniCssExtractPlugin.loader], // 从右向左解析
-
+  use: ["css-loader", MiniCssExtractPlugin.loader], // 从右向左解析
 };
+
 const sassLoader = {
   test: /\.scss$/,
 
-    use: [{
-      loader: "style-loader" // 将 JS 字符串生成为 style 节点
-    }, {
-      loader: "css-loader" // 将 CSS 转化成 CommonJS 模块
-    }, {
-      loader: "sass-loader" // 将 Sass 编译成 CSS
-    }]
-
+  use: [
+    {
+      loader: "style-loader", // 将 JS 字符串生成为 style 节点
+    },
+    {
+      loader: "css-loader", // 将 CSS 转化成 CommonJS 模块
+    },
+    {
+      loader: "sass-loader", // 将 Sass 编译成 CSS
+    },
+  ],
 };
 const fileLoader = {
   test: /\.(png|svg|jpg|gif)$/,
-  use: [`file-loader`],
+  type: "asset/inline",
 };
 const jsxLoader = {
   test: /\.jsx$/,
@@ -52,14 +56,8 @@ const jsxLoader = {
 };
 const svgLoader = {
   test: /\.svg$/,
-  use: [
-    {
-      loader: "image-webpack-loader",
-    },
-    {
-      loader: "base64-inline-loader",
-    },
-  ],
+
+  type: "asset/inline",
 };
 
 const jsLoader = {
@@ -88,7 +86,7 @@ const csvLoader = {
 
 const htmlLoader = {
   test: /\.html$/,
-  use: "file-loader?name=[name].[ext]",
+  type: "asset/source",
 };
 const xmlLoader = {
   test: /\.xml$/,

@@ -38,5 +38,3 @@ yarn.lock
 .cache
 .temp
 dat/
-
-.parcel-cache

@@ -19,4 +19,4 @@ vite一般会把css和js分开
 
 ## 使用vue-vite开发
 
-见[说明](./monkey-vue/README.md)
+见[说明](./packages/monkey-vue/README.md)
